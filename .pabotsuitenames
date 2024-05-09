@@ -1,0 +1,8 @@
+datasources:59707d940acb7a3f39392a5c051b2b6d9e1c2e5f
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:d7b5c1ec50c809c24863dc76825f54851ed29102
+--suite Suites.Logo
+--suite Suites.SearchBoxTest
+--suite Suites.SigninSignoutTest
+--suite Suites.TopNavBarTest

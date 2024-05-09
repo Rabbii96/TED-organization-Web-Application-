@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221123 19:03:09.174" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCases" source="E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\TestCases">
+<suite id="s1-s1" name="Logo" source="E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\TestCases\logo.robot">
+<test id="s1-s1-t1" name="LogoTest" line="6">
+<kw name="Logo" library="LogoKeywords">
+<kw name="setUp" library="BasePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221123 19:03:09.600" level="INFO">Opening browser 'chrome' to base url 'https://www.ted.com/'.</msg>
+<status status="PASS" starttime="20221123 19:03:09.599" endtime="20221123 19:03:13.949"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221123 19:03:13.952" endtime="20221123 19:03:14.550"/>
+</kw>
+<status status="PASS" starttime="20221123 19:03:09.599" endtime="20221123 19:03:14.551"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221123 19:03:16.553" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221123 19:03:14.552" endtime="20221123 19:03:16.553"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_logo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 19:03:16.555" level="INFO">Clicking element 'xpath://a[@class='outline-inside flex items-center py-4']//*[name()='svg']//*[name()='path' and contains(@fill-rule,'evenodd')]'.</msg>
+<msg timestamp="20221123 19:03:16.563" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:16.565" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<status status="FAIL" starttime="20221123 19:03:16.554" endtime="20221123 19:03:16.577"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:16.577" endtime="20221123 19:03:16.578"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:09.599" endtime="20221123 19:03:16.578"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:16.579" endtime="20221123 19:03:16.579"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:16.580" endtime="20221123 19:03:16.580"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:09.598" endtime="20221123 19:03:16.580">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</status>
+</test>
+<status status="FAIL" starttime="20221123 19:03:09.305" endtime="20221123 19:03:16.594"/>
+</suite>
+<suite id="s1-s2" name="SearchBoxTest" source="E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\TestCases\SearchBoxTest.robot">
+<test id="s1-s2-t1" name="SearchBoxTest" line="6">
+<kw name="SearchBox" library="SearchBarKeywords">
+<kw name="setUp" library="BasePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221123 19:03:16.619" level="INFO">Opening browser 'chrome' to base url 'https://www.ted.com/'.</msg>
+<status status="PASS" starttime="20221123 19:03:16.618" endtime="20221123 19:03:21.131"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20221123 19:03:21.185" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:21.191" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<status status="FAIL" starttime="20221123 19:03:21.134" endtime="20221123 19:03:21.196"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:16.618" endtime="20221123 19:03:21.200"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.201" endtime="20221123 19:03:21.201"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_search_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.202" endtime="20221123 19:03:21.202"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.203" endtime="20221123 19:03:21.203"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_anything}</arg>
+<arg>videos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.204" endtime="20221123 19:03:21.205"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.206" endtime="20221123 19:03:21.206"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${press_key}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.207" endtime="20221123 19:03:21.208"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.209" endtime="20221123 19:03:21.209"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:16.617" endtime="20221123 19:03:21.214"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.217" endtime="20221123 19:03:21.218"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:21.220" endtime="20221123 19:03:21.220"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:16.616" endtime="20221123 19:03:21.222">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</status>
+</test>
+<status status="FAIL" starttime="20221123 19:03:16.599" endtime="20221123 19:03:21.244"/>
+</suite>
+<suite id="s1-s3" name="SigninSignoutTest" source="E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\TestCases\SigninSignoutTest.robot">
+<test id="s1-s3-t1" name="SignInTest" line="7">
+<kw name="Signin" library="SigninSignoutKeywords">
+<kw name="setUp" library="BasePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221123 19:03:21.300" level="INFO">Opening browser 'chrome' to base url 'https://www.ted.com/'.</msg>
+<status status="PASS" starttime="20221123 19:03:21.299" endtime="20221123 19:03:25.746"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20221123 19:03:25.800" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:25.801" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<status status="FAIL" starttime="20221123 19:03:25.748" endtime="20221123 19:03:25.803"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:21.297" endtime="20221123 19:03:25.805"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.807" endtime="20221123 19:03:25.808"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_signin_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.811" endtime="20221123 19:03:25.812"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.812" endtime="20221123 19:03:25.813"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textbox_username_xpath}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.813" endtime="20221123 19:03:25.814"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.815" endtime="20221123 19:03:25.815"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_continue_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.815" endtime="20221123 19:03:25.816"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.816" endtime="20221123 19:03:25.817"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textbox_password_xpath}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.817" endtime="20221123 19:03:25.818"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.818" endtime="20221123 19:03:25.819"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_continue_button2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.819" endtime="20221123 19:03:25.820"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.820" endtime="20221123 19:03:25.820"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_continue_button3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.829" endtime="20221123 19:03:25.830"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.830" endtime="20221123 19:03:25.831"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:21.296" endtime="20221123 19:03:25.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.834" endtime="20221123 19:03:25.835"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:21.294" endtime="20221123 19:03:25.847">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</status>
+</test>
+<test id="s1-s3-t2" name="SignoutTest" line="11">
+<kw name="Signout" library="SigninSignoutKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_profile_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 19:03:25.886" level="INFO">Clicking element 'xpath:(//div[@class='relative block w-full'])[1]'.</msg>
+<msg timestamp="20221123 19:03:25.905" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:25.910" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<status status="FAIL" starttime="20221123 19:03:25.885" endtime="20221123 19:03:25.915"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.917" endtime="20221123 19:03:25.917"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_signout_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.918" endtime="20221123 19:03:25.918"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.918" endtime="20221123 19:03:25.919"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:25.884" endtime="20221123 19:03:25.919"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.920" endtime="20221123 19:03:25.920"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:25.927" endtime="20221123 19:03:25.927"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:25.883" endtime="20221123 19:03:25.928">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</status>
+</test>
+<status status="FAIL" starttime="20221123 19:03:21.257" endtime="20221123 19:03:25.950"/>
+</suite>
+<suite id="s1-s4" name="TopNavBarTest" source="E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\TestCases\TopNavBarTest.robot">
+<test id="s1-s4-t1" name="TopNavBarTest" line="6">
+<kw name="TopNavBarWatch" library="TopNavBarKeywords">
+<kw name="setUp" library="BasePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221123 19:03:26.004" level="INFO">Opening browser 'chrome' to base url 'https://www.ted.com/'.</msg>
+<status status="PASS" starttime="20221123 19:03:26.003" endtime="20221123 19:03:30.231"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20221123 19:03:30.285" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:30.305" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<status status="FAIL" starttime="20221123 19:03:30.239" endtime="20221123 19:03:30.308"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:26.002" endtime="20221123 19:03:30.310"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.311" endtime="20221123 19:03:30.312"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${click_watch}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.312" endtime="20221123 19:03:30.313"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.313" endtime="20221123 19:03:30.313"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_TED_Talks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.314" endtime="20221123 19:03:30.314"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.315" endtime="20221123 19:03:30.315"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_2_watch}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.316" endtime="20221123 19:03:30.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.317" endtime="20221123 19:03:30.318"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_TED_Recommends}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.322" endtime="20221123 19:03:30.323"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.324" endtime="20221123 19:03:30.324"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_3_watch}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.325" endtime="20221123 19:03:30.325"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.326" endtime="20221123 19:03:30.327"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_Playlists}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.327" endtime="20221123 19:03:30.328"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.329" endtime="20221123 19:03:30.329"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_4_watch}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.330" endtime="20221123 19:03:30.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.331" endtime="20221123 19:03:30.331"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_TED_Series}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.332" endtime="20221123 19:03:30.332"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.332" endtime="20221123 19:03:30.333"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_5_watch}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.333" endtime="20221123 19:03:30.334"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.335" endtime="20221123 19:03:30.336"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_TED_Ed_videos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.338" endtime="20221123 19:03:30.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.341" endtime="20221123 19:03:30.341"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_6_watch}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.342" endtime="20221123 19:03:30.343"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.343" endtime="20221123 19:03:30.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_TEDx_Talks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.345" endtime="20221123 19:03:30.345"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.345" endtime="20221123 19:03:30.346"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_discover}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.346" endtime="20221123 19:03:30.347"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.347" endtime="20221123 19:03:30.348"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_Topics}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.348" endtime="20221123 19:03:30.349"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.350" endtime="20221123 19:03:30.352"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_Attend}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.356" endtime="20221123 19:03:30.357"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.357" endtime="20221123 19:03:30.358"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_conferences}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.358" endtime="20221123 19:03:30.359"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.359" endtime="20221123 19:03:30.360"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_participate}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.361" endtime="20221123 19:03:30.361"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.361" endtime="20221123 19:03:30.362"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_Nominate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.362" endtime="20221123 19:03:30.362"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.363" endtime="20221123 19:03:30.363"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${click_About}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.364" endtime="20221123 19:03:30.364"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.365" endtime="20221123 19:03:30.365"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_our_org}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.366" endtime="20221123 19:03:30.366"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.367" endtime="20221123 19:03:30.367"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:26.002" endtime="20221123 19:03:30.368"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.372" endtime="20221123 19:03:30.372"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221123 19:03:30.373" endtime="20221123 19:03:30.373"/>
+</kw>
+<status status="FAIL" starttime="20221123 19:03:26.000" endtime="20221123 19:03:30.374">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</status>
+</test>
+<status status="FAIL" starttime="20221123 19:03:25.963" endtime="20221123 19:03:30.392"/>
+</suite>
+<status status="FAIL" starttime="20221123 19:03:09.281" endtime="20221123 19:03:30.408"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Logo">TestCases.Logo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="SearchBoxTest">TestCases.SearchBoxTest</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s3" name="SigninSignoutTest">TestCases.SigninSignoutTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="TopNavBarTest">TestCases.TopNavBarTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221123 19:03:09.595" level="ERROR">Error in file 'E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\Resources\LogoKeywords.robot' on line 6: Resource file '..\Resource\HomePage.robot' does not exist.</msg>
+<msg timestamp="20221123 19:03:16.563" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:16.612" level="ERROR">Error in file 'E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\Resources\SearchBarKeywords.robot' on line 6: Resource file '..\Resource\HomePage.robot' does not exist.</msg>
+<msg timestamp="20221123 19:03:21.185" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:25.800" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:25.905" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+<msg timestamp="20221123 19:03:25.997" level="ERROR">Error in file 'E:\Robot Framework\WEB-Testing\AutomationForPracticePerpousePOMBased\Resources\TopNavBarKeywords.robot' on line 6: Resource file '..\Resource\HomePage.robot' does not exist.</msg>
+<msg timestamp="20221123 19:03:30.285" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E8ACD3+2075859]
+	Ordinal0 [0x00E1EE61+1633889]
+	Ordinal0 [0x00D1B7BD+571325]
+	Ordinal0 [0x00D02E1A+470554]
+	Ordinal0 [0x00D6AA0B+895499]
+	Ordinal0 [0x00D7AC96+961686]
+	Ordinal0 [0x00D67136+880950]
+	Ordinal0 [0x00D3FEFD+720637]
+	Ordinal0 [0x00D40F3F+724799]
+	GetHandleVerifier [0x0113EED2+2769538]
+	GetHandleVerifier [0x01130D95+2711877]
+	GetHandleVerifier [0x00F1A03A+521194]
+	GetHandleVerifier [0x00F18DA0+516432]
+	Ordinal0 [0x00E2682C+1665068]
+	Ordinal0 [0x00E2B128+1683752]
+	Ordinal0 [0x00E2B215+1683989]
+	Ordinal0 [0x00E36484+1729668]
+	BaseThreadInitThunk [0x75988674+36]
+	RtlGetAppContainerNamedObjectPath [0x77715E17+311]
+	RtlGetAppContainerNamedObjectPath [0x77715DE7+263]
+</msg>
+</errors>
+</robot>
